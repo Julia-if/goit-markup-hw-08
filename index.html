@@ -12,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -31,6 +30,11 @@
                     <li class="menu__item"> <a class="menu__link link" href="">Контакты</a> </li>
                 </ul>
             </nav>
+            <button class="header__mobile-menu-btn" type="button" data-menu-button>
+                <svg class="header__mobile-menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
@@ -48,79 +52,125 @@
             </ul>
         </div>
     </header>
-    <main>
-        <!-- ===HERO=== -->
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
-            </div>
-        </section>
-        <!-- ===END HERO=== -->
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button class="mobile-menu__close" type="button" data-menu-close>
+                <svg class="modal__x" width=18px height=18px>
+                    <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Студия</a></li>
+                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакты</a></li> </ul>
 
-        <!-- ===Переваги=== -->
-        <section class="skills">
-            <div class="container">
-                <h2 hidden>Наші переваги</h2>
-                <ul class="skills__list list">
-                    <li class="skills__item">
-                        <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
-                                <use href="./images/symbol-defs.svg#icon-antenna">
-                                </use>
-                            </svg></div>
-                        <h3 class="skills__title">Внимание к деталям</h3>
-                        <p class="skills__description">Идейные соображения, а также начало повседневной работы по
-                            формированию позиции.</p>
-                    </li>
-                    <li class="skills__item">
-                        <div class="skills__container"> <svg class="skills__container_img" width=70px height=70px>
-                                <use href="./images/symbol-defs.svg#icon-clock">
-                                </use>
-                            </svg></div>
-                        <h3 class="skills__title">Пунктуальность</h3>
-                        <p class="skills__description">Задача организации, в особенности же рамки и место обучения
-                            кадров влечет за собой.</p>
-                    </li>
-                    <li class="skills__item">
-                        <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
-                                <use href="./images/symbol-defs.svg#icon-diagram">
-                                </use>
-                            </svg></div>
-                        <h3 class="skills__title">Планирование</h3>
-                        <p class="skills__description">Равным образом консультация с широким активом в значительной
-                            степени обуславливает.</p>
-                    </li>
-                    <li class="skills__item">
-                        <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
-                                <use href="./images/symbol-defs.svg#icon-astronaut">
-                                </use>
-                            </svg></div>
-                        <h3 class="skills__title">Современные технологии</h3>
-                        <p class="skills__description">Значимость этих проблем настолько очевидна, что реализация
-                            плановых заданий.</p>
-                    </li>
+            <ul class="mobile-contacts list">
+                <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__phone link">+38 096 111 11 11</a></li>
+                <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__mail link">info@devstudio.com</a></li>
+               </ul>
+                 
+                <ul class="mobile-social__nav list">
+                    <li class="mobile-menu__item"><a href="" class="mobile-social__link link">Instagram</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-social__link link">Twitter</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-social__link link">Facebook</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-social__link link">LinkedIn</a></li>
                 </ul>
-            </div>
-        </section>
-        <!-- ===End Переваги=== -->
 
-        <!-- ===Our works=== -->
-        <section class="works section">
+            </div>
+    </div>
+    <main>
+    <!-- ===HERO=== -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+    </section>
+    <!-- ===END HERO=== -->
+
+    <!-- ===Переваги=== -->
+    <section class="skills">
+        <div class="container">
+            <h2 hidden>Наші переваги</h2>
+            <ul class="skills__list list">
+                <li class="skills__item">
+                    <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
+                            <use href="./images/symbol-defs.svg#icon-antenna">
+                            </use>
+                        </svg></div>
+                    <h3 class="skills__title">Внимание к деталям</h3>
+                    <p class="skills__description">Идейные соображения, а также начало повседневной работы по
+                        формированию позиции.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__container"> <svg class="skills__container_img" width=70px height=70px>
+                            <use href="./images/symbol-defs.svg#icon-clock">
+                            </use>
+                        </svg></div>
+                    <h3 class="skills__title">Пунктуальность</h3>
+                    <p class="skills__description">Задача организации, в особенности же рамки и место обучения
+                        кадров влечет за собой.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
+                            <use href="./images/symbol-defs.svg#icon-diagram">
+                            </use>
+                        </svg></div>
+                    <h3 class="skills__title">Планирование</h3>
+                    <p class="skills__description">Равным образом консультация с широким активом в значительной
+                        степени обуславливает.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__container"><svg class="skills__container_img" width=70px height=70px>
+                            <use href="./images/symbol-defs.svg#icon-astronaut">
+                            </use>
+                        </svg></div>
+                    <h3 class="skills__title">Современные технологии</h3>
+                    <p class="skills__description skills__description-last">Значимость этих проблем настолько очевидна,
+                        что реализация
+                        плановых заданий.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ===End Переваги===!>
+
+    <-- ===Our works=== -->
+    <section class="works section">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="works__list list">
-                    <li class="works__item"><img src="./images/works/img.jpg" alt="роззмітка майбутнього сайту"
-                            width="370">
+                    <li class="works__item">
+                        <picture class="picture">
+                            <source srcset="./images/works/img@webp.webp 1x, ./images/works/imgx2webp.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp">
+                            <source srcset="./images/works/img.jpg 1x, ./images/works/img@2x.jpg 2x">
+                             <img  src="./images/works/img.jpg" alt="розмітка майбутнього сайту" class="picture-img"></picture>
+                      
                         <div class="work__bg">
                             <p class="work__bg_content">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"><img src="./images/works/img1.jpg" alt="адаптація сайту" width="370">
+                    <li class="works__item">
+                        <picture class="picture">
+                            <source srcset="./images/works/img1@webp.webp 1x, ./images/works/img1@x2webp.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./images/works/img1.jpg 1x, ./images/works/img1@2x.jpg 2x">
+                            <img src="./images/works/img1.jpg" alt="адаптація сайту" class="picture-img">
+                        </picture>
+                        
                         <div class="work__bg">
                             <p class="work__bg_content">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"><img src="./images/works/img2.jpg" alt="вибір кольорової гами" width="370">
+                    <li class="works__item">
+                        <picture class="picture">
+                            <source srcset="./images/works/img2@webp.webp 1x, ./images/works/img2@x2webp.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./images/works/img2.jpg 1x, ./images/works/img2@x2.jpg 2x">
+                            <img src="./images/works/img1.jpg" alt="адаптація сайту" class="picture-img">
+                        </picture>
+                      
                         <div class="work__bg">
                             <p class="work__bg_content">Дизайнерские решения</p>
                         </div>
@@ -128,15 +178,32 @@
                 </ul>
             </div>
         </section>
-        <!-- ===End Our works=== -->
+    <!-- ===End Our works=== -->
 
-        <!-- ===Our team=== -->
-        <section class="team section">
+    <!-- ===Our team=== -->
+    <section class="team section">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list list">
-                    <li class="team__item"><img src="./images/team/photo-igor.jpg" alt="фото хлопця в окулярах"
-                            width="270" height="260">
+                    <li class="team__item">
+                        <picture class="picture">
+                            <source srcset="./images/team/desktop/photo-igor@1xw-desktop.webp 1x, ./images/team/desktop/photo-igor@2xw-desktop.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./images/team/desktop/photo-igor.jpg 1x, ./images/team/desktop/photo-igor@2x-tablet.jpg 2x" media="(min-width: 1200px)">
+
+                            <source
+                                srcset="./images/team/tablet/photo-igor@1x-tablet.webp 1x, ./images/team/tablet/photo-igor@2x-tablet.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/photo-igor@1x-tablet.jpg, ./images/team/tablet/photo-igor@2x-tablet.jpg 2x" media="(min-width: 768px)">
+
+                            <source
+                                srcset="./images/team/mobile/photo-igor@1x-mobile.webp 1x, ./images/team/mobile/photo-igor@2x-mobile.webp 2x"
+                                media="(min-width: 480px)" type="image/webp">
+                            <source srcset="./images/team/mobile/photo-igor@1x-mobile.jpg 1x, ./images/team/mobile/photo-igor@2x-mobile.jpg 2x" media="(min-width: 480px)">
+
+                            <img src="./images/team/mobile/photo-igor@1x-mobile.jpg" alt="розмітка майбутнього сайту" class="picture-img">
+                        </picture>
+                        
                         <div class="team__content">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__description" lang="en">Product Designer</p>
@@ -165,8 +232,28 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/team/photo-olga.jpg"
-                            alt="фото дівчини із світлим волоссям в окулярах" width="270" height="260">
+                    <li class="team__item">
+                        <picture class="picture">
+                            <source
+                                srcset="./images/team/desktop/photo-olga@1xw-desktop.webp 1x, ./images/team/desktop/photo-olga@2xw-desktop.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/team/desktop/photo-olga.jpg 1x, ./images/team/desktop/2x-desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                        
+                            <source
+                                srcset="./images/team/tablet/photo-olga@1x-tablet.webp 1x, ./images/team/tablet/photo-olga@2x-tablet.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/team/tablet/photo-olga@1x-tablet.jpg, ./images/team/tablet/photo-olga@22x-tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                        
+                            <source
+                                srcset="./images/team/mobile/photo-olga@1x-mobile.webp 1x, ./images/team/mobile/photo-olga@2x-mobile.webp 2x"
+                                media="(min-width: 480px)" type="image/webp">
+                            <source srcset="./images/team/mobile/photo-olga@1x-mobile.jpg 1x, ./images/team/mobile/photo-olga@2x-mobile.jpg 2x"
+                                media="(min-width: 480px)">
+                        
+                            <img src="./images/team/mobile/photo-olga@1x-mobile.jpg" alt="розмітка майбутнього сайту" class="picture-img">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__description" lang="en">Frontend Developer</p>
@@ -195,8 +282,28 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/team/photo-nikolay.jpg"
-                            alt="фото хлопця в голубій сорочці " width="270" height="260">
+                    <li class="team__item">
+                            <picture class="picture">
+                                <source
+                                    srcset="./images/team/desktop/photo-nikolay@1xw-desktop.webp 1x, ./images/team/desktop/photo-nikolay@2xw-desktop.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/team/desktop/photo-nikolay.jpg 1x, ./images/team/desktop/photo-nikolay@2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <source
+                                    srcset="./images/team/tablet/photo-nikolay@1x-tablet.webp 1x, ./images/team/tablet/photo-nikolay@2x-tablet.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/team/tablet/photo-nikolay@1x-tablet.jpg, ./images/team/tablet/photo-nikolay@2x-tablet.jpg 2x"
+                                    media="(min-width: 768px)">
+                            
+                                <source
+                                    srcset="./images/team/mobile/photo-nikolay@1x-mobile.webp 1x, ./images/team/mobile/photo-nikolay@2x-mobile.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="./images/team/mobile/photo-nikolay@1x-mobile.jpg 1x, ./images/team/mobile/photo-nikolay@2x-mobile.jpg 2x"
+                                    media="(min-width: 480px)">
+                            
+                                <img src="./images/team/mobile/photo-nikolay@1x-mobile.jpg" alt="розмітка майбутнього сайту" class="picture-img">
+                            </picture>
                         <div class="team__content">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__description" lang="en">Marketing</p>
@@ -225,8 +332,30 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/team/photo-mihaiyl.jpg"
-                            alt="фото смуглого хлопця в окулярах" width="270" height="260">
+                    <li class="team__item">
+                            <picture class="picture">
+                                <source
+                                    srcset="./images/team/desktop/photo-mihaiyl@1xw-desktop.webp 1x, ./images/team/desktop/photo-mihaiyl@2xw-desktop.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/team/desktop/photo-mihaiyl.jpg 1x, ./images/team/desktop/photo-mihaiyl@2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <source
+                                    srcset="./images/team/tablet/photo-mihayil@1x-tablet.webp 1x, ./images/team/tablet/photo-mihayil@2x-tablet.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/team/tablet/photo-mihayil@1x-tablet.jpg, ./images/team/tablet/photo-mihayil@2x-tablet.jpg 2x"
+                                    media="(min-width: 768px)">
+                            
+                                <source
+                                    srcset="./images/team/mobile/photo-mihayil@1x-mobile.webp 1x, ./images/team/mobile/photo-mihayil@2x-mobile.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source
+                                    srcset="./images/team/mobile/photo-mihayil@1x-mobile.jpg 1x, ./images/team/mobile/photo-mihayil@2x-mobile.jpg 2x"
+                                    media="(min-width: 480px)">
+                            
+                                <img src="./images/team/mobile/photo-mihaiyl@1x-mobile.jpg" alt="розмітка майбутнього сайту" class="picture-img">
+                            </picture>
                         <div class="team__content">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__description" lang="en">UI Designer</p>
@@ -259,9 +388,9 @@
             </div>
         </section>
 
-        <!-- ===End our team=== -->
-        <!-- ===Cliens=== -->
-        <section class="cliens section">
+    <!-- ===End our team=== -->
+    <!-- ===Cliens=== -->
+    <section class="cliens section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="cliens__list list">
@@ -309,12 +438,13 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- ===End Cliens=== -->
+        </section> 
+        </main>
+    <!-- ===End Cliens=== -->
 
-    </main>
+   
     <!-- ===Footer=== -->
-    <footer class="footer">
+    <footer class="footer"> 
         <div class="container">
             <div class="contacts-conteiner">
                 <a class="footer__logo link" href="./index.html">Web<span class="footer__logo_white">Studio</span>
@@ -378,54 +508,55 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> 
     <!-- === End Footer=== -->
     <!-- === Modal=== -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="modal__backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close" type="button" data-modal-close>
-                <svg class="modal-btn-close" width=18px height=18px>
+            <button class="modal__close" type="button" data-modal-close>
+                <svg class="modal__x" width=18px height=18px>
                     <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
                 </svg>
             </button>
-            <form action="#" class="modal-form">
-                <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
-                <label class="modal-form-field">Имя
-                    <span class="modal-form-input-wrapper">
-                        <input type="text" name="user-name" class="modal-form-input" minlength="2" required>
-                        <svg class="modal-form-icon" width=18px height=18px>
+            <form action="#" class="form">
+                <p class="form__head">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="form__field">Имя
+                    <span class="form__wrapper">
+                        <input type="text" name="user-name" class="form__input" minlength="2" required>
+                        <svg class="form__icon" width=18px height=18px>
                             <use href="./images/symbol-defs.svg#icon-person"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-field"> Телефон
-                    <span class="modal-form-input-wrapper"> <input type="tel" name="user-phone" class="modal-form-input"
+                <label class="form__field"> Телефон
+                    <span class="form__wrapper"> <input type="tel" name="user-phone" class="form__input"
                             pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}" title="096-111-11-11" required> <svg
-                            class="modal-form-icon" width=18px height=18px>
+                            class="form__icon" width=18px height=18px>
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg></span>
                 </label>
-                <label class="modal-form-field"> Почта
-                    <span class="modal-form-input-wrapper"> <input type="email" name="user-email"
-                            class="modal-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> <svg
-                            class="modal-form-icon" width=18px height=18px>
+                <label class="form__field"> Почта
+                    <span class="form__wrapper"> <input type="email" name="user-email" class="form__input"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> <svg class="form__icon"
+                            width=18px height=18px>
                             <use href="./images/symbol-defs.svg#icon-email"></use>
                         </svg></span>
                 </label>
-                <label class="modal-form-field-massage"> Комментарий
-                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                <label class="form__massage"> Комментарий
+                    <textarea name="user-message" class="form__coments" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden"
-                    id="checkbox-policy" required>
-                <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a
-                        href="" class="modal-form-policy-link">Условия договора</a></label>
-                <button type="submit" class="modal-form-btn">Отправить</button>
+                <input type="checkbox" name="user-policy" class="form__checkbox visually-hidden" id="checkbox-policy"
+                    required>
+                <label for="checkbox-policy" class="form__policy">Соглашаюсь с рассылкой и принимаю <a href=""
+                        class="form__policy-link">Условия договора</a></label>
+                <button type="submit" class="form__btn">Отправить</button>
             </form>
         </div>
 
     </div>
     <!-- === end modal=== -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

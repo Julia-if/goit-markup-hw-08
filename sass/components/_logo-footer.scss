@@ -1,3 +1,17 @@
+// .footer__logo {
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+//   display: inline-block;
+//   margin-bottom: 20px;
+//   &_white {
+//   color: var(--color-hero-title);
+// }
+// }
+
 .footer__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -5,10 +19,24 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  display: inline-block;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
   &_white {
-  color: var(--color-hero-title);
+    color: var(--color-hero-title);
+  }
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 20px;
+    &_white {
+      color: var(--color-hero-title);
+    }
+  }
 }
-
