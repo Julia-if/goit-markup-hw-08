@@ -51,9 +51,9 @@
   &__address {
     font-style: normal;
   }
-  &__list {
-    margin-bottom: 60px;
-  }
+  // &__list {
+  //   // margin-bottom: 60px;
+  // }
   &__link {
     font-weight: 400;
     font-size: 14px;
@@ -92,7 +92,7 @@
   }
 }
 .contacts-conteiner {
-  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,6 +139,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+      justify-content: space-around;
     }
   }
 }
@@ -187,5 +188,8 @@
       display: flex;
       align-items: baseline;
     }
+  }
+  .contacts-conteiner {
+    margin-bottom: 0px;
   }
 }

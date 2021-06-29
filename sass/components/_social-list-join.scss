@@ -40,12 +40,12 @@
 //   }
 
 .footer-social {
-  margin: 0 auto;
+  margin-bottom: 60px;
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
   &__link {
     display: flex;
@@ -84,7 +84,7 @@
 }
 @media screen and (min-width: 768px) {
   .footer-social {
-    margin-left: 70px;
+    margin-bottom: 0px;
     &__list {
       display: flex;
     }

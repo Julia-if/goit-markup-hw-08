@@ -47,8 +47,16 @@
   .menu-portfolio-item {
     margin-bottom: 15px;
   }
+  .menu-portfolio-item-4,
+  .menu-portfolio-item-5 {
+    margin-bottom: 0px;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .menu-portfolio-item {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu-portfolio-list {
     display: flex;
